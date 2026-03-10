@@ -1,0 +1,2 @@
+class UserUnverifiedError:
+    pass

@@ -1,0 +1,2 @@
+class InvalidTicketTypeError:
+    pass
