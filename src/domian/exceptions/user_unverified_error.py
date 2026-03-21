@@ -1,2 +1,2 @@
-class UserUnverifiedError:
-    pass
+class UserUnverifiedError(Exception):
+    """Raised when user does not have a verified passport."""

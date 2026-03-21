@@ -1,0 +1,83 @@
+@startuml
+title Ticket Booking - Domain UML (Checkpoint 1)
+
+class User {
+  +first_name: str
+  +last_name: str
+  +passport: str?
+  +address: str?
+  +is_verified: bool
+}
+
+class Event {
+  +id: str
+  +title: str
+  +event_date: datetime
+  +location: str
+  +capacity: int
+  +free_seats: int
+  +reserve_seat()
+  +release_seat()
+}
+
+enum TicketType {
+  STANDARD
+  VIP
+  EARLY_BIRD
+}
+
+enum TicketStatus {
+  AVAILABLE
+  BOOKED
+  CANCELLED
+}
+
+class Ticket {
+  +ticket_type: TicketType
+  +price: float
+  +status: TicketStatus
+}
+
+enum BookingStatus {
+  CREATED
+  CANCELLED
+}
+
+class Booking {
+  +id: str
+  +status: BookingStatus
+  +created_at: datetime
+}
+
+class UserBuilder {
+  +set_name(first_name, last_name)
+  +set_passport(passport)
+  +set_address(address)
+  +build(): User
+}
+
+class TicketFactory {
+  +create_ticket(ticket_type): Ticket
+}
+
+class BookingService {
+  +create_booking(user, event, ticket): Booking
+  +cancel_booking(booking): Booking
+  +check_availability(event): bool
+}
+
+class NotEnoughSeatError
+class UserUnverifiedError
+class InvalidTicketTypeError
+
+Booking --> User
+Booking --> Event
+Booking --> Ticket
+UserBuilder ..> User : creates
+TicketFactory ..> Ticket : creates
+BookingService ..> Booking : creates
+BookingService ..> UserUnverifiedError
+Event ..> NotEnoughSeatError
+TicketFactory ..> InvalidTicketTypeError
+
+@enduml
