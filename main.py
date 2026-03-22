@@ -1,11 +1,11 @@
 from dataclasses import asdict
 from datetime import datetime, timedelta
 
-from src.domian.builders import UserBuilder
-from src.domian.factories import TicketFactory
-from src.domian.models.booking import Booking
-from src.domian.models.event import Event
-from src.domian.services import BookingService
+from src.domain.builders import UserBuilder
+from src.domain.factories import TicketFactory
+from src.domain.models.booking import Booking
+from src.domain.models.event import Event
+from src.domain.services import BookingService
 from src.infrastructure.repositories.json_repository import JSONRepository
 
 

@@ -1,5 +1,5 @@
-from src.domian.exceptions.invalid_ticket_type_error import InvalidTicketTypeError
-from src.domian.models.ticket import Ticket, TicketType
+from src.domain.exceptions.invalid_ticket_type_error import InvalidTicketTypeError
+from src.domain.models.ticket import Ticket, TicketType
 
 
 class TicketFactory:

@@ -2,9 +2,9 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from enum import Enum
 
-from src.domian.models.event import Event
-from src.domian.models.ticket import Ticket
-from src.domian.models.user import User
+from src.domain.models.event import Event
+from src.domain.models.ticket import Ticket
+from src.domain.models.user import User
 
 
 class BookingStatus(str, Enum):

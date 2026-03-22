@@ -70,5 +70,53 @@
     },
     "status": "created",
     "created_at": "2026-03-21T14:22:55.904026"
+  },
+  "d1f06d1f-5708-4d3a-bd15-26f00ee2ba6c": {
+    "id": "d1f06d1f-5708-4d3a-bd15-26f00ee2ba6c",
+    "user": {
+      "first_name": "Ivan",
+      "last_name": "Petrov",
+      "passport": "4510 123456",
+      "address": "Moscow"
+    },
+    "event": {
+      "id": "event-001",
+      "title": "Python Conference",
+      "event_date": "2026-03-29T12:29:25.928405",
+      "location": "Moscow Expo",
+      "capacity": 100,
+      "free_seats": 99
+    },
+    "ticket": {
+      "ticket_type": "VIP",
+      "price": 2500.0,
+      "status": "booked"
+    },
+    "status": "created",
+    "created_at": "2026-03-22T12:29:25.929335"
+  },
+  "01a74404-6d6a-4e2f-b57f-b24355cdef9f": {
+    "id": "01a74404-6d6a-4e2f-b57f-b24355cdef9f",
+    "user": {
+      "first_name": "Ivan",
+      "last_name": "Petrov",
+      "passport": "4510 123456",
+      "address": "Moscow"
+    },
+    "event": {
+      "id": "event-001",
+      "title": "Python Conference",
+      "event_date": "2026-03-29T12:30:25.044606",
+      "location": "Moscow Expo",
+      "capacity": 100,
+      "free_seats": 99
+    },
+    "ticket": {
+      "ticket_type": "VIP",
+      "price": 2500.0,
+      "status": "booked"
+    },
+    "status": "created",
+    "created_at": "2026-03-22T12:30:25.044703"
   }
 }

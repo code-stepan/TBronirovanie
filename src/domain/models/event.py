@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from datetime import datetime
 
-from src.domian.exceptions.not_enough_seat_error import NotEnoughSeatError
+from src.domain.exceptions.not_enough_seat_error import NotEnoughSeatError
 
 
 @dataclass(slots=True)

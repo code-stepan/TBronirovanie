@@ -1,4 +1,4 @@
-from src.domian.models.user import User
+from src.domain.models.user import User
 
 
 class UserBuilder:
@@ -20,9 +20,6 @@ class UserBuilder:
     def set_address(self, address: str) -> "UserBuilder":
         self._address = address.strip()
         return self
-
-    def set_adress(self, address: str) -> "UserBuilder":
-        return self.set_address(address)
 
     def build(self) -> User:
         if not self._first_name or not self._last_name:

@@ -1,10 +1,10 @@
 from uuid import uuid4
 
-from src.domian.exceptions.user_unverified_error import UserUnverifiedError
-from src.domian.models.booking import Booking, BookingStatus
-from src.domian.models.event import Event
-from src.domian.models.ticket import Ticket, TicketStatus
-from src.domian.models.user import User
+from src.domain.exceptions.user_unverified_error import UserUnverifiedError
+from src.domain.models.booking import Booking, BookingStatus
+from src.domain.models.event import Event
+from src.domain.models.ticket import Ticket, TicketStatus
+from src.domain.models.user import User
 
 
 class BookingService:
